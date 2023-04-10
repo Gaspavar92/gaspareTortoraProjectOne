@@ -246,4 +246,11 @@ h1 {
     background-color: $white;
     border: 1px solid $darkGray;
     font: inherit;
+    transition: .3s ease;
+}
+
+.featured-sale button:hover {
+    cursor: pointer;
+    color: $white;
+    background-color: $darkGray;
 }

@@ -446,4 +446,11 @@ h1 {
   background-color: #fff;
   border: 1px solid #333;
   font: inherit;
+  transition: 0.3s ease;
+}
+
+.featured-sale button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #333;
 }
