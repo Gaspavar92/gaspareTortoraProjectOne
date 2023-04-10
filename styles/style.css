@@ -364,7 +364,7 @@ h1 {
   flex-direction: column;
   border: 1px solid rgba(102, 102, 102, 0.1137254902);
   height: 250px;
-  min-width: 180px;
+  min-width: 150px;
   width: calc(20% - 50px);
   padding: 5px;
   position: relative;
@@ -431,4 +431,20 @@ h1 {
 
 .new-tag {
   background-color: #88cce2;
+}
+
+.featured-sale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-sale button {
+  margin: 40px;
+  padding: 10px 25px 10px 25px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
+  font-family: inherit;
+  font-weight: inherit;
 }
