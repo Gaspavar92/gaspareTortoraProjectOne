@@ -243,6 +243,8 @@ h1, h2, h3, h4, h5, ul li {
 .off {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  font-size: 4rem;
+  margin: 0;
 }
 
 section {
@@ -252,6 +254,12 @@ section {
 .wrapper {
   max-width: 1200px;
   width: 85%;
+  margin: 0 auto;
+}
+
+.wrapper-small {
+  max-width: 900px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -368,6 +376,14 @@ h1 {
   width: calc(20% - 50px);
   padding: 5px;
   position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.sale-item:hover {
+  margin-top: -5px;
+  margin-bottom: 5x;
+  box-shadow: 0px 0px 25px -20px black;
 }
 
 .featured-sale h2 {
@@ -453,4 +469,70 @@ h1 {
   cursor: pointer;
   color: #fff;
   background-color: #333;
+}
+
+/*SALES SECTION*/
+.sales {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sale1 {
+  background-image: url(../assets/vert1.jpg);
+  height: 50vh;
+  width: 30%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 30px;
+  color: #fff;
+}
+
+.sale2 {
+  background-image: url(../assets/vert2.jpg);
+  height: 50vh;
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.for-sale-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sale-up-to {
+  color: #d7b89c;
+  display: block;
+  background-color: #fff;
+  width: 50%;
+  padding: 2px;
+}
+
+.shop-now {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.arrow {
+  transition: 0.5s ease;
+}
+
+.shop-now:hover {
+  text-decoration: underline;
+}
+
+.shop-now:hover .arrow {
+  margin-left: 5px;
+  margin-right: -5px;
 }
