@@ -499,13 +499,20 @@ h1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2rem;
 }
 
-.for-sale-text {
+.for-sale-text1 {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .sale-up-to {
@@ -535,4 +542,11 @@ h1 {
 .shop-now:hover .arrow {
   margin-left: 5px;
   margin-right: -5px;
+}
+
+.for-sale-text2 {
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
 }
