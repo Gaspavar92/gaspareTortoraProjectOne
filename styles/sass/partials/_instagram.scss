@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+/*INSTAGRAM SECTION*/
+
+.instagram {
+    text-align: center;
+}
+
+.instagram p {
+    color: $lightGray;
+}
+
+.instagram h2 {
+    margin: 0;
+}
+
+.insta-images {
+    display: flex;
+    gap: 20px;
+}
+
+.insta-images img {
+    width: calc(100% / 5 - 20px);
+    min-width: 150px;
+}

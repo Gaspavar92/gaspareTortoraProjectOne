@@ -1,0 +1,55 @@
+@use "./variables" as *;
+
+/*GENERIC STYLING*/
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: $darkGray;
+}
+
+h1, h2, h3, h4, h5, ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+.off {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+}
+
+section, footer {
+    margin-top: 100px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper-small {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}

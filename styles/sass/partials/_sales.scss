@@ -1,0 +1,82 @@
+@use "./variables" as *;
+
+/*SALES SECTION*/
+
+.sales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sale1 {
+    background-image: url(../assets/vert1.jpg);
+    height: 50vh;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 30px;
+    color: $white;
+}
+
+.sale2 {
+    background-image: url(../assets/vert2.jpg);
+    height: 50vh;
+    width: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2rem;
+}
+
+.for-sale-text1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sale-up-to {
+    color: $brown;
+    display: block;
+    background-color: $white;
+    width: 50%;
+    padding: 2px;
+}
+
+.shop-now {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    margin-top: 10px;
+}
+
+.arrow {
+    transition: .5s ease;
+}
+
+.shop-now:hover {
+    text-decoration: underline;
+}
+
+.shop-now:hover .arrow {
+    margin-left: 5px;
+    margin-right: -5px;
+}
+
+.for-sale-text2 {
+    border: 1px solid $white;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+}

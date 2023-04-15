@@ -1,0 +1,38 @@
+@use "./variables" as *;
+
+/*CATALOG*/
+
+.catalog {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    height: 500px;
+}
+
+.image1 {
+    align-self: center;
+}
+
+.image3 {
+    align-self: flex-end;
+}
+
+.catalog img {
+    height: inherit;
+    width: inherit;
+}
+
+.image1, .image2, .image3 {
+    position: relative;
+    height: 450px;
+    width: 300px;
+}
+
+.catalog p {
+    position: absolute;
+    background-color: $white;
+    padding: 10px;
+    bottom: 10px;
+    font-size: 1.2rem;
+}
