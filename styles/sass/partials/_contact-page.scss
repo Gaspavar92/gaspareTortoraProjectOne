@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+header {
+    height: 40vh;
+    background-image: url("../assets/contact-us.jpg");
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 60%;
+    gap: 20px;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 1px solid $darkGray;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
