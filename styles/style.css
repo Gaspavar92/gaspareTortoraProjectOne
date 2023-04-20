@@ -275,6 +275,11 @@ ul {
   padding-left: 0;
 }
 
+li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 /*HEADER*/
 nav ul {
   display: flex;
@@ -712,6 +717,7 @@ footer li:hover {
   footer {
     height: -moz-fit-content;
     height: fit-content;
+    padding: 20px;
   }
   .footer-elem {
     width: 100%;
@@ -756,6 +762,12 @@ footer li:hover {
   }
   .for-sale-text2 {
     width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  button {
+    align-self: center;
   }
 }
 @media (max-width: 420px) {

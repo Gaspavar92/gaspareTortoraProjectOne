@@ -223,6 +223,42 @@ html {
 }
 
 /*SCSS VARIABLES*/
+header {
+  height: 40vh;
+  background-image: url("../assets/contact-us.jpg");
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 50%;
+  gap: 20px;
+}
+
+button {
+  width: 120px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #333;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
 /*GENERIC STYLING*/
 html {
   font-size: 62.5%;
@@ -273,6 +309,11 @@ section, footer {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+li {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 /*HEADER*/
@@ -467,6 +508,7 @@ footer li:hover {
   footer {
     height: -moz-fit-content;
     height: fit-content;
+    padding: 20px;
   }
   .footer-elem {
     width: 100%;
@@ -512,6 +554,12 @@ footer li:hover {
   .for-sale-text2 {
     width: 100%;
   }
+  .form {
+    width: 100%;
+  }
+  button {
+    align-self: center;
+  }
 }
 @media (max-width: 420px) {
   .sale-item {
@@ -533,30 +581,4 @@ footer li:hover {
   .header-nav ul {
     display: none;
   }
-}
-header {
-  height: 40vh;
-  background-image: url("../assets/contact-us.jpg");
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  width: 60%;
-  gap: 20px;
-}
-
-button {
-  width: 120px;
-  padding: 10px;
-}
-
-input, textarea {
-  border: none;
-  border-bottom: 1px solid #333;
-  padding: 10px;
-  font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
 }

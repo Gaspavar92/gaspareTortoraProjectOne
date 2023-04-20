@@ -9,13 +9,22 @@ header {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    width: 60%;
+    width: 50%;
     gap: 20px;
 }
 
 button {
     width: 120px;
     padding: 10px;
+    background-color: $white;
+    border: 1px solid $darkGray;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $darkGray;
+    color: $white;
 }
 
 input, textarea {
