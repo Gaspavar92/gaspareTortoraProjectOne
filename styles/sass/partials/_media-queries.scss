@@ -105,4 +105,14 @@
     .header-text {
         margin-left: 10px;
     }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .header-nav ul {
+        display: none;
+    }
 }

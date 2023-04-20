@@ -22,4 +22,10 @@
 .insta-images img {
     width: calc(100% / 5 - 20px);
     min-width: 150px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.insta-images img:hover {
+    transform: scale(1.1);
 }

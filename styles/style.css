@@ -286,6 +286,10 @@ nav ul li a {
   color: #333;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -305,6 +309,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 
 header img {
@@ -336,6 +341,15 @@ h1 {
 
 .header-text h1, .header-text p {
   width: 30%;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 /*CATALOG*/
@@ -575,6 +589,12 @@ h1 {
 .insta-images img {
   width: calc(20% - 20px);
   min-width: 150px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.insta-images img:hover {
+  transform: scale(1.1);
 }
 
 /*FOOTER*/
@@ -749,5 +769,13 @@ footer li:hover {
   }
   .header-text {
     margin-left: 10px;
+  }
+  .hamburger-menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .header-nav ul {
+    display: none;
   }
 }

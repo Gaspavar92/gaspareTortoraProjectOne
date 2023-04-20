@@ -12,6 +12,10 @@ nav ul li a {
     color: $darkGray;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,6 +35,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 header img {
@@ -62,4 +67,13 @@ h1 {
 
 .header-text h1, .header-text p {
     width: 30%;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
 }
