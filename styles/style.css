@@ -224,6 +224,10 @@ html {
 
 /*SCSS VARIABLES*/
 /*GENERIC STYLING*/
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -781,6 +785,9 @@ footer li:hover {
   }
   .header-text {
     margin-left: 10px;
+  }
+  .header-text p, .header-text h1 {
+    width: 45%;
   }
   .hamburger-menu {
     display: block;
