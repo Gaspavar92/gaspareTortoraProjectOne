@@ -497,6 +497,10 @@ footer li:hover {
     align-self: center;
     width: 400px;
     height: 600px;
+    display: none;
+  }
+  .active {
+    display: block;
   }
   .insta-images {
     flex-wrap: wrap;

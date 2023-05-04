@@ -16,6 +16,11 @@
         align-self: center;
         width: 400px;
         height: 600px;
+        display: none;
+    }
+
+    .active {
+        display: block;
     }
 
     .insta-images {
