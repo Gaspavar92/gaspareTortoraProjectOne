@@ -12,19 +12,17 @@ const nextButton = document.querySelector('.next');
 
 let index = 0;
 
-previousButton.addEventListener('click', function() {
-    if (index > 0) {
-        carouselImages[index].classList.remove('active')
-        index -= 1;
-        carouselImages[index].classList.add('active')
-    }
-})
+previousButton.addEventListener('click', function() { 
+    carouselImages[index].classList.remove('active')
+    //This is a very handy formula that I found online; I made sure I fully understood what it does before applying it. I had already created my carousel at this point, and I was just looking to improve it.
+    index = (index - 1 + carouselImages.length) % carouselImages.length;
+    carouselImages[index].classList.add('active')
+
+});
 
 nextButton.addEventListener('click', function() {
-    if (index < 2) {
-        carouselImages[index].classList.remove('active')
-        index += 1;
-        carouselImages[index].classList.add('active')
-    }
+    carouselImages[index].classList.remove('active')
+    index = (index + 1) % carouselImages.length;
+    carouselImages[index].classList.add('active')
 })
 

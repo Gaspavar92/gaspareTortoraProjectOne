@@ -703,21 +703,25 @@ footer li:hover {
   }
   .catalog {
     flex-direction: column;
-    height: -moz-fit-content;
-    height: fit-content;
+    position: relative;
   }
   .image1, .image2, .image3 {
     align-self: center;
     width: 400px;
     height: 600px;
-    display: none;
+    opacity: 0;
+    transition: 0.4s ease;
+    position: absolute;
   }
   .active {
-    display: block;
+    opacity: 1;
   }
   .insta-images {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .carousel-buttons {
+    margin-top: 700px;
   }
 }
 @media (max-width: 620px) {
