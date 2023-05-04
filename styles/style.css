@@ -398,7 +398,16 @@ h1 {
 }
 
 .carousel-buttons {
-  text-align: center;
+  display: none;
+}
+
+.carousel-buttons i {
+  transition: 0.2s ease;
+}
+
+.carousel-buttons i:hover {
+  color: rgb(14, 69, 171);
+  transform: scale(1.1);
 }
 
 /*FEATURED SALE*/
@@ -721,7 +730,24 @@ footer li:hover {
     justify-content: center;
   }
   .carousel-buttons {
-    margin-top: 700px;
+    z-index: 0;
+    display: block;
+  }
+  .carousel {
+    position: relative;
+  }
+  .previous, .next {
+    position: absolute;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .previous {
+    left: 110px;
+  }
+  .next {
+    right: 110px;
   }
 }
 @media (max-width: 620px) {

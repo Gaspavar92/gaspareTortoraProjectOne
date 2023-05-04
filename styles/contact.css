@@ -508,7 +508,24 @@ footer li:hover {
     justify-content: center;
   }
   .carousel-buttons {
-    margin-top: 700px;
+    z-index: 0;
+    display: block;
+  }
+  .carousel {
+    position: relative;
+  }
+  .previous, .next {
+    position: absolute;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .previous {
+    left: 110px;
+  }
+  .next {
+    right: 110px;
   }
 }
 @media (max-width: 620px) {

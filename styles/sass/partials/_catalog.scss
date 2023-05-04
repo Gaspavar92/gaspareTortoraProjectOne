@@ -38,5 +38,14 @@
 }
 
 .carousel-buttons {
-    text-align: center;
+    display: none;
+}
+
+.carousel-buttons i {
+    transition: .2s ease;
+}
+
+.carousel-buttons i:hover {
+    color: rgb(14, 69, 171);
+    transform: scale(1.1);
 }
