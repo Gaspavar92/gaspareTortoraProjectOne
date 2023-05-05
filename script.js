@@ -1,28 +1,13 @@
-// Hide carousel images when screen size is less than 960px
+// Selecting DOM elements to create mobile nav menu
 
-// const screenSize960 = window.matchMedia("(max-width: 960px)");
+const burgerMenu = document.querySelector('.hamburger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
 
-const carouselImages = document.querySelectorAll('.carousel-image');
-const activeCarousel = document.querySelector('.active');
+// Defining function to open mobile menu
 
-const previousButton = document.querySelector('.previous');
-const nextButton = document.querySelector('.next');
+const openMenu = () => {
+    mobileMenu.classList.toggle('show');
+}
+burgerMenu.addEventListener('click', openMenu)
 
-// Adding event listeners in order to change carousel image on button click
-
-let index = 0;
-
-previousButton.addEventListener('click', function() { 
-    carouselImages[index].classList.remove('active')
-    //This is a very handy formula that I found online; I made sure I fully understood what it does before applying it. I had already created my carousel at this point, and I was just looking to improve it.
-    index = (index - 1 + carouselImages.length) % carouselImages.length;
-    carouselImages[index].classList.add('active')
-
-});
-
-nextButton.addEventListener('click', function() {
-    carouselImages[index].classList.remove('active')
-    index = (index + 1) % carouselImages.length;
-    carouselImages[index].classList.add('active')
-})
 

@@ -77,3 +77,32 @@ h1 {
 .hamburger-menu {
     display: none;
 }
+
+.mobile-menu {
+    position: absolute;
+    transition: .5s ease-in-out;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    background-color: $lightGray;
+    border-right: 2px solid black;
+    height: 100vh;
+    z-index: 1;
+    width: 200px;
+    transform: translateX(-100%);
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu a {
+    color: $white;
+    font-size: 1.3rem;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.2);
+}

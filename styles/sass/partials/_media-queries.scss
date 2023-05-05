@@ -34,6 +34,11 @@
     .carousel-buttons {
        z-index: 0;
        display: block;
+       position: absolute;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       gap: 350px;
     }
 
     .carousel {
@@ -41,19 +46,10 @@
     }
 
     .previous, .next {
-        position: absolute;
-        font-size: 50px;
+        font-size: 60px;
         background-color: transparent;
         border: none;
         cursor: pointer;
-    }
-
-    .previous {
-        left: 110px;
-    }
-
-    .next {
-        right: 110px;
     }
 }
 
@@ -160,5 +156,13 @@
 
     .header-nav ul {
         display: none;
+    }
+
+    .show {
+        transform: translateX(0)
+    }
+
+    .carousel-buttons {
+        gap: 250px;
     }
 }
