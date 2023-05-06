@@ -127,6 +127,46 @@
     button {
         align-self: center;
     }
+
+    .insta-carousel {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        transition: .3s ease;
+    }
+
+    .insta-images img {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .insta-buttons {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .insta-buttons button {
+        background: none;
+        border: none;
+        font-size: 50px;
+        cursor: pointer;
+        transition: .2s ease;
+    }
+
+    .insta-buttons button:hover {
+        color: rgb(20, 63, 142);
+        transform: scale(1.1);
+    }
+
+    // .move-left {
+    //     transform: translateX(-100%);
+    // }
+
+    // .move-right {
+    //     transform: translateX(100%);   
+    // }
 }
 
 @media (max-width: 420px) {

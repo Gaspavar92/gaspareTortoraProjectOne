@@ -644,8 +644,8 @@ h1 {
   cursor: pointer;
 }
 
-.insta-images img:hover {
-  transform: scale(1.1);
+.insta-buttons {
+  display: none;
 }
 
 /*FOOTER*/
@@ -837,6 +837,33 @@ footer li:hover {
   }
   button {
     align-self: center;
+  }
+  .insta-carousel {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    transition: 0.3s ease;
+  }
+  .insta-images img {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  .insta-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  .insta-buttons button {
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .insta-buttons button:hover {
+    color: rgb(20, 63, 142);
+    transform: scale(1.1);
   }
 }
 @media (max-width: 420px) {

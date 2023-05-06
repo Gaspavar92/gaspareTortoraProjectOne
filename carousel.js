@@ -24,4 +24,29 @@ nextButton.addEventListener('click', function() {
     carouselImages[index].classList.add('active')
 })
 
-console.log(carouselImages)
+// Selecting DOM elements in order to create an Instagram images carousel
+
+const instaImages = document.querySelectorAll('.insta-img');
+const instaPrevious = document.querySelector('.insta-previous');
+const instaNext = document.querySelector('.insta-next');
+const instaParent = document.querySelector('.insta-images')
+
+// Writing functions that allow to navigate through the instagram carousel
+
+let counter = 0;
+const size = instaImages[0].clientWidth;
+
+const slide = () => {
+    instaParent.style.transform = `translateX(calc(${-size * counter}px - ${20 * counter}px))`
+}
+
+instaPrevious.addEventListener('click', () => {
+    if (counter == 0) return;
+    counter--;
+    slide();
+});
+instaNext.addEventListener('click', () => {
+    if (counter >= instaImages.length - 1) return;
+    counter++;
+    slide();
+})
