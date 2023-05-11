@@ -34,9 +34,9 @@ const instaParent = document.querySelector('.insta-images')
 // Writing functions that allow to navigate through the instagram carousel
 
 let counter = 0;
-const size = instaImages[0].clientWidth;
 
 const slide = () => {
+    const size = instaImages[0].clientWidth;
     instaParent.style.transform = `translateX(calc(${-size * counter}px - ${20 * counter}px))`
 }
 
@@ -49,4 +49,10 @@ instaNext.addEventListener('click', () => {
     if (counter >= instaImages.length - 1) return;
     counter++;
     slide();
+})
+
+// Moving the parent element to its original position when the carousel images are all displayed
+
+window.addEventListener('resize', (event) => {
+    !event.target.matchMedia('(max-width: 620px)').matches ? instaParent.style.transform = `translateX(0)` : null
 })
