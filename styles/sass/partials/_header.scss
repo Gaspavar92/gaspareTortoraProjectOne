@@ -74,8 +74,38 @@ h1 {
     align-items: center;
 }
 
-.hamburger-menu {
+.hamburger {
+    width: 4rem;
+    position: relative;
+    height: 4rem;
     display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    transition: .4s;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    content: '';
+    border-radius: 5px;
+    display: block;
+}
+
+.hamburger.is-active::after {
+    transform: rotate(-45deg) translate(5px,-10.5px);
+    background-color: $white;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(45deg) translate(5px,10.5px);
+    background-color: $white;
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
 }
 
 .mobile-menu {
@@ -89,20 +119,20 @@ h1 {
     border-right: 2px solid black;
     height: 100vh;
     z-index: 1;
-    width: 200px;
+    width: 100%;
     transform: translateX(-100%);
+    opacity: 0.9;
 }
 
 .mobile-menu ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 8rem;
 }
 
 .mobile-menu a {
     color: $white;
-    font-size: 1.3rem;
-}
-
-.opacity {
-    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
 }
