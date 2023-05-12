@@ -54,5 +54,10 @@ instaNext.addEventListener('click', () => {
 // Moving the parent element to its original position when the carousel images are all displayed
 
 window.addEventListener('resize', (event) => {
-    !event.target.matchMedia('(max-width: 620px)').matches ? instaParent.style.transform = `translateX(0)` : null
+    // !event.target.matchMedia('(max-width: 620px)').matches ? instaParent.style.transform = `translateX(0)` : null
+
+    if (!event.target.matchMedia('(max-width: 620px)').matches) {
+        instaParent.style.transform = `translateX(0)`;
+        counter = 0;
+    }
 })
