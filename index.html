@@ -17,9 +17,7 @@
 
         <div class="cart-menu">
             <div class="close-btn"><i class="fa-sharp fa-solid fa-circle-xmark"></i></div>
-            <div class="cart-message">
-                <p></p>
-            </div>
+            <div class="cart-message"></div>
         </div>
 
         <div class="navbar">
@@ -247,7 +245,20 @@
                 </div>
             </div>
 
-            <button>View All</button>
+            <div class="product-details hidden">
+                <div class="product-title"></div>
+                <img src="" alt="" class="product-image">
+                <div class="product-description"></div>
+                <div class="product-price"></div>
+                <div class="edit-qty">
+                    <button class="remove-btn">-</button>
+                    <input type="text" class="quantity" value="0">
+                    <button class="add-btn">+</button>
+                </div>
+
+            </div>
+
+            <button class="featured-sale-button">View All</button>
 
         </section>
 
@@ -331,5 +342,6 @@
     <script src="./script.js"></script>
     <script src="./carousel.js"></script>
     <script src="./cart.js"></script>
+    <script src="./product.js"></script>
 </body>
 </html>

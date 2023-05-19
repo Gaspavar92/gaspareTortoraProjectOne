@@ -13,6 +13,7 @@
     position: relative;
     cursor: pointer;
     transition: .5s ease;
+    background-color: $white;
 }
 
 .sale-item:hover {
@@ -85,7 +86,7 @@
     align-items: center;
 }
 
-.featured-sale button {
+.featured-sale-button {
     margin: 40px;
     padding: 10px 25px 10px 25px;
     color: $darkGray;
@@ -95,8 +96,45 @@
     transition: .3s ease;
 }
 
-.featured-sale button:hover {
+.featured-sale-button:hover {
     cursor: pointer;
     color: $white;
     background-color: $darkGray;
+}
+
+.open-product {
+    padding: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3.5);
+    z-index: 9999;
+    background-color: $white;
+    border: 1px solid red;
+    transition: .3s;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    transition: .3s ease;
+}
+
+.close-button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+.product-image {
+    height: 100px;
+    width: 100px;
 }

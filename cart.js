@@ -17,3 +17,14 @@ const closeCart = () => {
 
 cartButton.addEventListener('click', openCart);
 closeBtn.addEventListener('click', closeCart);
+
+// Updating cart quantity
+
+const cartMessage = document.querySelector('.cart-message');
+
+let total = 0;
+
+const p = document.createElement('p');
+p.innerHTML = `You have ${total} item(s) in your cart`;
+p.setAttribute('style', 'color:white; margin-left: 20px; font-size: 2rem;')
+cartMessage.append(p);

@@ -506,6 +506,7 @@ h1 {
   position: relative;
   cursor: pointer;
   transition: 0.5s ease;
+  background-color: #fff;
 }
 
 .sale-item:hover {
@@ -578,7 +579,7 @@ h1 {
   align-items: center;
 }
 
-.featured-sale button {
+.featured-sale-button {
   margin: 40px;
   padding: 10px 25px 10px 25px;
   color: #333;
@@ -588,10 +589,47 @@ h1 {
   transition: 0.3s ease;
 }
 
-.featured-sale button:hover {
+.featured-sale-button:hover {
   cursor: pointer;
   color: #fff;
   background-color: #333;
+}
+
+.open-product {
+  padding: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3.5);
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid red;
+  transition: 0.3s;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.product-image {
+  height: 100px;
+  width: 100px;
 }
 
 /*SALES SECTION*/
