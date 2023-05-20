@@ -596,15 +596,17 @@ h1 {
 }
 
 .open-product {
-  padding: 40px;
+  padding: 10px 25px;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(3.5);
+  transform: translate(-50%, -50%) scale(2.5);
   z-index: 9999;
   background-color: #fff;
-  border: 1px solid red;
+  border: 2px solid #333;
   transition: 0.3s;
+  box-shadow: 2px 3px 15px -5px black;
+  border-radius: 5px;
 }
 
 .close-button {
@@ -614,12 +616,8 @@ h1 {
   font-size: 2rem;
   background: none;
   border: none;
-  transition: 0.3s ease;
-}
-
-.close-button:hover {
-  cursor: pointer;
-  transform: scale(1.2);
+  transition: 0.2s ease;
+  color: #333;
 }
 
 .hidden {
@@ -628,8 +626,77 @@ h1 {
 }
 
 .product-image {
-  height: 100px;
+  height: 120px;
   width: 100px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 220px;
+}
+
+.remove-btn, .add-btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.edit-qty {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.edit-qty input {
+  text-align: center;
+  width: 60px;
+}
+
+.remove-btn {
+  left: 40px;
+  bottom: -5px;
+}
+
+.add-btn {
+  right: 40px;
+  bottom: -5px;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #fff;
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 0;
+  transition: 0.2s ease;
+}
+
+.add-to-cart:hover, .add-btn:hover, .remove-btn:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  color: #666;
 }
 
 /*SALES SECTION*/
