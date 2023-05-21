@@ -638,7 +638,7 @@ h1 {
   font-size: 2rem;
   width: 80%;
   height: 80%;
-  max-width: 70vw;
+  max-width: 50vw;
   overflow-y: auto;
   text-align: center;
   gap: 5px;
@@ -947,6 +947,9 @@ footer li:hover {
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+  .product-details {
+    max-width: 80vw;
   }
 }
 @media (max-width: 620px) {

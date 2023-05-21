@@ -609,6 +609,9 @@ footer li:hover {
     border: none;
     cursor: pointer;
   }
+  .product-details {
+    max-width: 80vw;
+  }
 }
 @media (max-width: 620px) {
   .footer {
