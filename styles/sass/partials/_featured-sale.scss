@@ -215,3 +215,24 @@
     cursor: pointer;
     color: $lightGray;
 }
+
+.cart-items {
+    display: flex;
+}
+
+.cart-image {
+    width: 80px;
+    height: 80px;
+}
+
+.cart-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.empty {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
